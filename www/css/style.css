@@ -8,7 +8,7 @@
     height: 100%;
 }
 
-.item-select select
+#gender
 {
     right: auto;
     padding: 13px 45px 15px 0px;
@@ -17,4 +17,8 @@
 
 .firstHeading {
   text-align: center;
+}
+
+#list {
+  margin-bottom: 25px;
 }
