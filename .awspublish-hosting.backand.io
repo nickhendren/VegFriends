@@ -1,0 +1,1 @@
+{"vegfriends/index.html":"\"0964375e9621effd4694ce347346d983\"","vegfriends/css/style.css":"\"42853b238e702b99dd41a50d5490e172\"","vegfriends/img/max.png":"\"66572ace014ac9119866c3190c8a0a03\"","vegfriends/img/adam.jpg":"\"b445da3cc203f97bce534fdad93b3931\"","vegfriends/img/ionic.png":"\"251ebf03b1c7889cf36cbcbcce8f689e\""}

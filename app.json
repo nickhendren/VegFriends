@@ -1,0 +1,7 @@
+{
+    "name": "VegFriends",
+    "description": "An app that helps you find vegetarian-friendly places to eat around you!",
+    "repository": "https://github.com/nickhendren/VegFriends",
+    "logo": "http://imgur.com/2iWktax",
+    "keywords": ["ionic", "VegFriends", "nickhendren"]
+}

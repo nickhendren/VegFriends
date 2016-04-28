@@ -161,7 +161,7 @@ angular.module('starter.controllers', [])
   });
 })
 
-.controller('ChatsCtrl', function($scope, Chats) {
+.controller('ChatsCtrl', function($scope, Chats, $ionicPopup) {
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
   // To listen for when this page is active (for example, to refresh data),
@@ -169,6 +169,21 @@ angular.module('starter.controllers', [])
   //
   //$scope.$on('$ionicView.enter', function(e) {
   //});
+  $scope.showConfirm = function() {
+     var confirmPopup = $ionicPopup.confirm({
+       title: 'Follow',
+       template: 'Do you want to follow this person?',
+       okText: 'Yes!'
+     });
+
+     confirmPopup.then(function(res) {
+       if(res) {
+         console.log('You are sure');
+       } else {
+         console.log('You are not sure');
+       }
+     });
+   };
 
   $scope.chats = Chats.all();
   $scope.remove = function(chat) {
@@ -287,7 +302,9 @@ angular.module('starter.controllers', [])
       }
     });
   };
-});
+})
+
+
 
 // .controller('PopupCtrl',function($scope, $ionicPopup) {
 //   $scope.showPopup = function() {
