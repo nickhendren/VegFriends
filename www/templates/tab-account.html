@@ -2,25 +2,50 @@
   <ion-content>
     <ion-list>
       <ul class="list">
-        <ion-toggle  ng-model="settings.enableFriends">
+        <!-- <ion-toggle  ng-model="settings.enableFriends">
             Enable Friends
-        </ion-toggle>
-        <ion-item class="item-icon-right" type="item-text-wrap" href="#">
-          Signup/Login
+        </ion-toggle> -->
+        <ion-item class="item item-icon-left item-icon-right" type="item-text-wrap" href="#/tab/signup">
+          <i class="icon ion-happy-outline"></i>
+          Sign Up
+          <ion-nav-view name="tab-signup"></ion-nav-view>
           <i class="icon ion-chevron-right icon-accessory"></i>
         </ion-item>
-        <ion-item class="item-icon-right" type="item-text-wrap" href="#">
+
+        <ion-item class="item item-icon-left item-icon-right" type="item-text-wrap" href="#/tab/login">
+          <i class="icon ion-log-in"></i>
+          Login
+          <ion-nav-view name="tab-signup"></ion-nav-view>
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+
+        <ion-item class="item item-icon-left item-icon-right" type="item-text-wrap" href="#/tab/featured">
+          <i class="icon ion-person-stalker"></i>
+          Featured Users
+          <ion-nav-view name="tab-featured"></ion-nav-view>
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+
+        <ion-item class="item item-icon-left item-icon-right" type="item-text-wrap" href="#/tab/profile">
+          <i class="icon ion-person"></i>
           Profile
+          <ion-nav-view name="tab-profile"></ion-nav-view>
           <i class="icon ion-chevron-right icon-accessory"></i>
         </ion-item>
-        <ion-item class="item-icon-right" type="item-text-wrap" href="#">
+
+        <ion-item class="item item-icon-left item-icon-right" type="item-text-wrap" href="#/tab/settings">
+          <i class="icon ion-settings"></i>
           Settings
+          <ion-nav-view name="tab-settings"></ion-nav-view>
           <i class="icon ion-chevron-right icon-accessory"></i>
         </ion-item>
-        <ion-item class="item-icon-right" type="item-text-wrap" href="#">
+
+        <ion-item class="item item-icon-left item-icon-right" type="item-text-wrap" href="#">
+          <i class="icon ion-log-out"></i>
           Logout
           <i class="icon ion-chevron-right icon-accessory"></i>
         </ion-item>
+
       </ul>
     </ion-list>
   </ion-content>
