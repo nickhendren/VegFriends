@@ -4,11 +4,54 @@
   The FriendsCtrl pulls data from the Friends service (service.js)
   The Friends service returns an array of friend data
 -->
-<ion-view view-title="{{chat.name}}">
+<ion-view view-title="{{chat.place}}">
   <ion-content class="padding">
-    <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
-    <p>
-      {{chat.lastText}}
-    </p>
+    <div class="row">
+      <img class="col" ng-src="{{chat.imageFront}}" style="width: 100px; height: 120px">
+      <img class="col" ng-src="{{chat.imageIndoor}}" style="width: 100px; height: 120px">
+      <img class="col" ng-src="{{chat.imageFood}}" style="width: 100px; height: 120px">
+    </div>
+    <br>
+    <p><b>Address: </b>{{chat.address}}</p>
+    <br>
+    <p><b>Phone: </b>{{chat.phone}}</p>
+    <br>
+    <a ng-href="{{chat.website}}"><b>Website</b></a>
+    <br>
+    <br>
+    <p><b>Hours: </b>{{chat.hours}}</p>
+    <br>
+    <p><b>Menu:</b><p>
+    <p>{{chat.menu.item1}}</p>
+    <p>{{chat.menu.item2}}</p>
+    <p>{{chat.menu.item3}}</p>
+    <h3 class="firstHeading">Reviews</h3>
+    <ion-list>
+      <ion-item class="item item-text-wrap item-thumbnail-left" href="">
+        <img src="img/ben.png">
+        <h2><b>Ben Sparrow</b></h2>
+        <p><b>Rating: </b>10/10</p>
+        <p><b>Review: </b>The food is incredibly delicious here! This is now my go-to spot!</p>
+      </ion-item>
+      <ion-item class="item item-text-wrap item-thumbnail-left" href="">
+        <img src="img/max.png">
+        <h2><b>Max Lynx</b></h2>
+        <p><b>Rating: </b>10/10</p>
+        <p><b>Review: </b>I really loved this place! The selection was great and it has a great atmosphere!</p>
+      </ion-item>
+      <ion-item class="item item-text-wrap item-thumbnail-left" href="">
+        <img src="img/adam.jpg">
+        <h2><b>Adam Bradleyson</b></h2>
+        <p><b>Rating: </b>10/10</p>
+        <p><b>Review: </b>I'm not a vegetarian so I struggled for a long time to find a place to eat with my vegetarian friends. I would never have found this place if it wasn't for VegFriends! I don't have to eat alone anymore! This place is amazing!</p>
+      </ion-item>
+      <ion-item class="item item-text-wrap item-thumbnail-left" href="">
+        <img src="img/perry.png">
+        <h2><b>Perry Governor</b></h2>
+        <p><b>Rating: </b>10/10</p>
+        <p><b>Review: </b>Food: 10/10, Service: 10/10, Decor: 10/10, Atmosphere: 10/10, Finding a vegetarian-friendly place to eat: Priceless.</p>
+      </ion-item>
+    </ion-list>
+
   </ion-content>
 </ion-view>

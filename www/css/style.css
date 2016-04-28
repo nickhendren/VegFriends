@@ -7,3 +7,14 @@
     width: 100%;
     height: 100%;
 }
+
+.item-select select
+{
+    right: auto;
+    padding: 13px 45px 15px 0px;
+    direction: ltr;
+}
+
+.firstHeading {
+  text-align: center;
+}

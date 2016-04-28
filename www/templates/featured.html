@@ -1,0 +1,15 @@
+<ion-view view-title="Featured Users">
+  <ion-content class="padding">
+    <ion-list>
+      <ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="">
+        <img ng-src="{{chat.face}}">
+        <h2><b>{{chat.name}}</b></h2>
+        <p><b># of Reviews:</b> {{chat.numberReview}}</p>
+        <p><b>Average Rating:</b> {{chat.rating}}/10</p>
+        <p><b>Latest Review:<b> {{chat.lastText}}</p>
+        <br>
+        <p href="">+ Follow User</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
